@@ -1,0 +1,97 @@
+/* Background Example */
+.bg-box {
+  width: 300px;
+  height: 200px;
+  background-color: lightblue;
+  background-image: url("pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+/* Text Example */
+p {
+  color: darkblue;
+  font-size: 1.2rem; /* relative to root */
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+/* Flex Example */
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* horizontal alignment */
+  align-items: center; /* vertical alignment */
+  margin: 20px 0;
+}
+.flex-container .box {
+  background: lightcoral;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+/* Grid Example */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 columns */
+  gap: 10px;
+  margin: 20px 0;
+}
+.grid-container .box {
+  background: lightgreen;
+  padding: 20px;
+  border: 1px solid #333;
+}
+
+/* Position Examples */
+div { position: static; }
+
+/* relative example */
+.relative-box {
+  position: relative;
+  top: 10px;  /* moves down */
+  left: 20px; /* moves right */
+  background: orange;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* absolute example */
+.parent {
+  position: relative;
+  background: lightgray;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.child {
+  position: absolute;
+  top: 0;
+  right: 0; /* sticks to parent’s top-right */
+  background: red;
+  color: white;
+  padding: 5px;
+}
+
+/* fixed example */
+.fixed-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: purple;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* sticky example */
+.sticky-box {
+  position: sticky;
+  top: 0; /* sticks at top when scrolling */
+  background: teal;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}

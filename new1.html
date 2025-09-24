@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width> initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1 style="text-align: center;">LOGIN FORM</h1>
+    <h2 style="color: blue;text-align: center;">Please fill in the details below</h2>
     <form action="/submit" method="post" style="text-align: center;">
         <input type="text" name="name" placeholder="Enter your name" required><br>
         <input type="email" name="email" placeholder="Enter your email" required><br>
         <input type="password" name="password" placeholder="Enter your password" required><br>
-        <input type="radio" id="male" name="gender"> <label for="male">Male</label> <br>
-        <input type="radio" id="female" name="gender"> <label for="female">Female</label> <br>
+        <input type="radio" id="male" name="gender"> <label id="m1" for="male" ;>Male</label> <br>
+        <input type="radio" id="female" name="gender"> <label id="m2" for="female">Female</label> <br>
         <input type="number" max="99" min="18" placeholder="Age"><br>
         <input type="submit" value="Login">
         <input type="Submit" value="Login">
     </form>
 </body>
+
 </html>
